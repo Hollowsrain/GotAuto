@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="?android:attr/selectableItemBackground"
+  android:clickable="true"
+  android:orientation="vertical"
+  android:id="@+id/listing">
+
+
+  <TextView
+    android:id="@+id/listingPrice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:paddingRight="10dp"
+    android:paddingLeft="50dp"
+    android:text="Title"
+    android:textSize="20dp" />
+
+  <TextView
+    android:id="@+id/listingYear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="50dp"
+    android:layout_below="@+id/listingPrice"
+    android:text="Desc"
+    android:textSize="10dp" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginBottom="1dp"
+    android:background="#c0c0c0"
+    android:layout_below="@+id/listingYear"
+    android:maxLength="10"/>
+
+
+</RelativeLayout>

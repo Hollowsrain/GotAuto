@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "897225461248",
+    "firebase_url": "https://gotauto-d883a.firebaseio.com",
+    "project_id": "gotauto-d883a",
+    "storage_bucket": "gotauto-d883a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897225461248:android:83cea1acf5a5b6be",
+        "android_client_info": {
+          "package_name": "a.a.gotauto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897225461248-3erbfjkpgggn2koqtu87bdghdev7dc7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a.a.gotauto",
+            "certificate_hash": "361102c6dfa5ca94e014c25704828148fed93a82"
+          }
+        },
+        {
+          "client_id": "897225461248-s3chp00c9ukvtjk2aqouuan111foclbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkbBX_dzz8AUpBNfKs8UrOrq-CnHWEArw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897225461248-s3chp00c9ukvtjk2aqouuan111foclbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
