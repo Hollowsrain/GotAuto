@@ -50,7 +50,7 @@ public class RegisterAdvertActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
 
     DatabaseReference databaseRef = FirebaseDatabase.getInstance()
-        .getReferenceFromUrl("https://gotauto-d883a.firebaseio.com/");
+        .getReferenceFromUrl();
       dataBaseUrl = databaseRef.child("Adverts").push();
 
     setContentView(R.layout.activity_register_advert);
