@@ -42,7 +42,7 @@ public class RegisterAdvertActivity extends AppCompatActivity {
   private Button buttonDrivingWheels;
   private Button buttonSeating;
   private EditText etFuelConsumption;
-  final SavedMainMenuSelection SavedMainMenuSelection = new SavedMainMenuSelection();
+  SavedMainMenuSelection SavedMainMenuSelection = new SavedMainMenuSelection();
 
   @SuppressLint("ClickableViewAccessibility")
   @Override
@@ -50,7 +50,7 @@ public class RegisterAdvertActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
 
     DatabaseReference databaseRef = FirebaseDatabase.getInstance()
-        .getReferenceFromUrl();
+        .getReferenceFromUrl("https://gotauto-d883a.firebaseio.com/");
       dataBaseUrl = databaseRef.child("Adverts").push();
 
     setContentView(R.layout.activity_register_advert);

@@ -45,20 +45,22 @@ public class SavedMainMenuSelection{
   }
 
   /////////////////////////End Of Main Menu get/set//////////////////////////////////////////
-  public static String fuelTypeR;
-   public static String bodyTypeR;
-   public static String combinedYearR;
-   public static String priceR;
-   public static String gearboxR;
-   public static String doorCountR;
-   public static String displacementR;
+
+
+   private static String fuelTypeR;
+   private static String bodyTypeR;
+   private  String combinedYearR;
+   private  String priceR;
+   private static String gearboxR;
+   private static String doorCountR;
+   private static String displacementR;
    public static String steeringWheelR;
    public static String defectsR;
-   public static String odometerR;
-   public static String powerKWR;
+   private static String odometerR;
+   private static String powerKWR;
    public static String drivingWheelsR;
    public static String seatingR;
-   public static String fuelConsumptionR;
+   private static String fuelConsumptionR;
 
   public  String getDrivingWheelsR() {
     return drivingWheelsR;
@@ -162,16 +164,19 @@ public class SavedMainMenuSelection{
     return combinedYearR;
   }
 
-  public  void setCombinedYearR(String combinedYearR) {
-    SavedMainMenuSelection.combinedYearR = combinedYearR;
+  public  void setCombinedYearR(String combinedYearr) {
+    combinedYearR = combinedYearr;
   }
-  public  void setPriceR(String priceR) {
-    SavedMainMenuSelection.priceR = priceR;
+  public  void setPriceR(String pricer) {
+    priceR = pricer;
   }
   public  String getPriceR() {
     return priceR;
   }
 
-
+  public SavedMainMenuSelection(String pricer, String combinedYearr){
+    this.combinedYearR = combinedYearr;
+    this.priceR = pricer;
+  }
 
 }

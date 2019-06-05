@@ -13,7 +13,6 @@ import com.google.firebase.database.Exclude;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AdvertListingActivity extends AppCompatActivity {
-  SavedMainMenuSelection savedMainMenuSelection = new SavedMainMenuSelection();
 
   private DatabaseReference dataBaseUrl;
 
@@ -40,11 +39,8 @@ public class AdvertListingActivity extends AppCompatActivity {
     ) {
       @Override
       protected void populateViewHolder(advertViewHolder viewHolder, SavedMainMenuSelection model, int position) {
-        viewHolder.setPricelisting(savedMainMenuSelection.getPriceR());
-        viewHolder.setYearlisting(savedMainMenuSelection.getCombinedYearR());
-
-
-
+        viewHolder.setPricelisting(model.getPriceR());
+        viewHolder.setYearlisting(model.getCombinedYearR());
       }
     };
     addList.setAdapter(firebaseRecyclerAdapter);
